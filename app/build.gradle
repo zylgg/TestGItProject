@@ -20,7 +20,17 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
+    compile 'com.google.code.gson:gson:2.4'
+    //    compile 'com.github.xxl6097:okhttputils:2.4.1'
+    compile files('libs/okhttputils-1.6.6.jar')
+    compile files('libs/okhttp-3.4.1.jar')
+    compile files('libs/okio-1.9.0.jar')
+    // 头像
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    //图片加载框架
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 }
